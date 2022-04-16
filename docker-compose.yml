@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  dungeom-maze-docker:
+    image: p0t4t0sandwich/homelab:dungeon-maze-docker
+    container_name: dungeom-maze-docker
+    environment:
+      - RADIUS=1000
+    volumes:
+      - /PATH-TO-OUPUT-FOLDER/:/output
+    ports:
+      - 0.0.0.0:25565:25565

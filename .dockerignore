@@ -1,0 +1,5 @@
+.dockerignore
+build.sh
+Dockerfile
+docker-compose
+README.md
