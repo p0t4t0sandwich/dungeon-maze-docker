@@ -4,10 +4,10 @@ services:
     image: p0t4t0sandwich/homelab:dungeon-maze-docker
     container_name: dungeom-maze-docker
     environment:
-      - MEM=2048                       # Amount of RAM to dedicate to the internal minecraft server in MB.
-      - RADIUS=100                     # Radius you wish to pregenerate. Origin is 0, 0.
-      - OUTPUT_DIR=test_done           # The name of the worldfile the program will output.
+      - MEM=1024                       # Amount of RAM to dedicate to the internal minecraft server in MB.
+      - RADIUS=1000                    # Radius you wish to pregenerate. Origin is 0, 0.
+      - OUTPUT_DIR=world_file          # The name of the worldfile the program will output.
     volumes:
-      - /PATH-TO-OUPUT-FOLDER/:/output # Path that the new worldfile will be output to.
+      - /PATH-TO-OUPUT-FOLDER:/output  # Path that the new worldfile will be output to.
     ports:
       - 0.0.0.0:25565:25565            # Port to join the MC server if you wish to monitor it while it runs.
