@@ -12,7 +12,7 @@ docker run \
   -e OUTPUT_DIR=world_file \
   -v /PATH-TO-OUPUT-FOLDER:/output \
   -p 0.0.0.0:25565:25565 \
-  p0t4t0sandwich/homelab:dungeon-maze-docker
+  p0t4t0sandwich/dungeon-maze-docker
 ```
 ## Parameters
 * `-e MEM=1024` Amount of RAM to dedicate to the internal minecraft server in MB.
@@ -25,7 +25,7 @@ docker run \
 version: "3.8"
 services:
   dungeom-maze-docker:
-    image: p0t4t0sandwich/homelab:dungeon-maze-docker
+    image: p0t4t0sandwich/dungeon-maze-docker
     container_name: dungeom-maze-docker
     environment:
       - MEM=1024                       # Amount of RAM to dedicate to the internal minecraft server in MB.
