@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo docker build -t dungeon-maze-docker ./
+sudo docker build -t p0t4t0sandwich/homelab:dungeon-maze-docker ./
