@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   dungeom-maze-docker:
-    image: p0t4t0sandwich/homelab:dungeon-maze-docker
+    image: p0t4t0sandwich/dungeon-maze-docker
     container_name: dungeom-maze-docker
     environment:
       - MEM=1024                       # Amount of RAM to dedicate to the internal minecraft server in MB.
